@@ -6,7 +6,7 @@
 package optimize
 
 import (
-	"github.com/unidoc/unipdf/v3/core"
+	"github.com/rafaelsanzio/unipdf/core"
 )
 
 // CompressStreams compresses uncompressed streams.

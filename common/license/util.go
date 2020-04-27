@@ -12,7 +12,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/unidoc/unipdf/v3/common"
+	"github.com/rafaelsanzio/unipdf/common"
 )
 
 // Defaults to unlicensed.

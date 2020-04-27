@@ -20,10 +20,10 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/unidoc/unipdf/v3/common"
-	"github.com/unidoc/unipdf/v3/creator"
-	"github.com/unidoc/unipdf/v3/internal/transform"
-	"github.com/unidoc/unipdf/v3/model"
+	"github.com/rafaelsanzio/unipdf/common"
+	"github.com/rafaelsanzio/unipdf/creator"
+	"github.com/rafaelsanzio/unipdf/internal/transform"
+	"github.com/rafaelsanzio/unipdf/model"
 	"golang.org/x/text/unicode/norm"
 )
 
@@ -67,7 +67,7 @@ func TestTextExtractionFragments(t *testing.T) {
 			name: "portrait",
 			contents: `
         BT
-        /UniDocCourier 24 Tf
+        /rafaelsanzioCourier 24 Tf
         (Hello World!)Tj
         0 -10 Td
         (Doink)Tj
@@ -79,7 +79,7 @@ func TestTextExtractionFragments(t *testing.T) {
 			name: "landscape",
 			contents: `
         BT
-        /UniDocCourier 24 Tf
+        /rafaelsanzioCourier 24 Tf
         0 1 -1 0 0 0 Tm
         (Hello World!)Tj
         0 -10 Td
@@ -92,7 +92,7 @@ func TestTextExtractionFragments(t *testing.T) {
 			name: "180 degree rotation",
 			contents: `
         BT
-        /UniDocCourier 24 Tf
+        /rafaelsanzioCourier 24 Tf
         -1 0 0 -1 0 0 Tm
         (Hello World!)Tj
         0 -10 Td
@@ -105,7 +105,7 @@ func TestTextExtractionFragments(t *testing.T) {
 			name: "Helvetica",
 			contents: `
         BT
-        /UniDocHelvetica 24 Tf
+        /rafaelsanzioHelvetica 24 Tf
         0 -1 1 0 0 0 Tm
         (Hello World!)Tj
         0 -10 Td

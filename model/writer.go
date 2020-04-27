@@ -20,11 +20,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/unidoc/unipdf/v3/common"
-	"github.com/unidoc/unipdf/v3/common/license"
-	"github.com/unidoc/unipdf/v3/core"
-	"github.com/unidoc/unipdf/v3/core/security"
-	"github.com/unidoc/unipdf/v3/core/security/crypt"
+	"github.com/rafaelsanzio/unipdf/common"
+	"github.com/rafaelsanzio/unipdf/common/license"
+	"github.com/rafaelsanzio/unipdf/core"
+	"github.com/rafaelsanzio/unipdf/core/security"
+	"github.com/rafaelsanzio/unipdf/core/security/crypt"
 )
 
 var pdfAuthor = ""
@@ -70,7 +70,7 @@ func getPdfCreator() string {
 	}
 
 	// Return default.
-	return "UniDoc - http://unidoc.io"
+	return "UniDoc - http://rafaelsanzio.io"
 }
 
 // SetPdfCreator sets the Creator attribute of the output PDF.
@@ -103,7 +103,7 @@ func getPdfProducer() string {
 	}
 
 	// Return default.
-	return fmt.Sprintf("UniDoc v%s (%s) - http://unidoc.io", getUniDocVersion(), licenseKey.TypeToString())
+	return fmt.Sprintf("UniDoc v%s (%s) - http://rafaelsanzio.io", getUniDocVersion(), licenseKey.TypeToString())
 }
 
 // SetPdfProducer sets the Producer attribute of the output PDF.
@@ -667,7 +667,7 @@ func procPage(p *PdfPage) {
 	ops = append(ops, fmt.Sprintf("/%s 14 Tf", fontName.String()))
 	ops = append(ops, "1 0 0 rg")
 	ops = append(ops, "10 10 Td")
-	s := "Unlicensed UniDoc - Get a license on https://unidoc.io"
+	s := "Unlicensed UniDoc - Get a license on https://rafaelsanzio.io"
 	ops = append(ops, fmt.Sprintf("(%s) Tj", s))
 	ops = append(ops, "ET")
 	ops = append(ops, "Q")
@@ -949,7 +949,7 @@ func (w *PdfWriter) Write(writer io.Writer) error {
 	lk := license.GetLicenseKey()
 	if lk == nil || !lk.IsLicensed() {
 		fmt.Printf("Unlicensed copy of unidoc\n")
-		fmt.Printf("To get rid of the watermark - Please get a license on https://unidoc.io\n")
+		fmt.Printf("To get rid of the watermark - Please get a license on https://rafaelsanzio.io\n")
 	}
 
 	// Outlines.

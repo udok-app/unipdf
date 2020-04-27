@@ -11,7 +11,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/unidoc/unipdf/v3/core"
+	"github.com/rafaelsanzio/unipdf/core"
 )
 
 // testAction loads an action object from object number 1 loaded from `rawText` PDF content and checks that
@@ -167,7 +167,7 @@ func TestPdfActionURI(t *testing.T) {
 1 0 obj
 <</Type /Action
 /S /URI
-/URI (https://unidoc.io/)
+/URI (https://rafaelsanzio.io/)
 /IsMap true
 >>
 endobj
@@ -176,7 +176,7 @@ endobj
 	testAction(t, rawText, ActionTypeURI, func(t *testing.T, action *PdfAction) {
 		contextAction, ok := action.context.(*PdfActionURI)
 		require.True(t, ok)
-		require.Equal(t, "https://unidoc.io/", contextAction.URI.String())
+		require.Equal(t, "https://rafaelsanzio.io/", contextAction.URI.String())
 		require.Equal(t, "true", contextAction.IsMap.String())
 	})
 }

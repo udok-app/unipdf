@@ -6,8 +6,8 @@
 package fonts
 
 import (
-	"github.com/unidoc/unipdf/v3/core"
-	"github.com/unidoc/unipdf/v3/internal/textencoding"
+	"github.com/rafaelsanzio/unipdf/core"
+	"github.com/rafaelsanzio/unipdf/internal/textencoding"
 )
 
 // StdFontName is a name of a standard font.

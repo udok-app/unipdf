@@ -9,8 +9,8 @@ import (
 	"bytes"
 	"fmt"
 
-	"github.com/unidoc/unipdf/v3/common/license"
-	"github.com/unidoc/unipdf/v3/core"
+	"github.com/rafaelsanzio/unipdf/common/license"
+	"github.com/rafaelsanzio/unipdf/core"
 )
 
 // RenderMode specifies the text rendering mode (Tmode), which determines whether showing text shall cause
@@ -64,14 +64,14 @@ func procBuf(pt *PageText) {
 		return
 	}
 	fmt.Printf("Unlicensed copy of unidoc\n")
-	fmt.Printf("To get rid of the watermark and keep entire text - Please get a license on https://unidoc.io\n")
+	fmt.Printf("To get rid of the watermark and keep entire text - Please get a license on https://rafaelsanzio.io\n")
 
 	var buf bytes.Buffer
 	buf.WriteString(pt.viewText)
 
-	s := "- [Unlicensed UniDoc - Get a license on https://unidoc.io]"
+	s := "- [Unlicensed UniDoc - Get a license on https://rafaelsanzio.io]"
 	if buf.Len() > 100 {
-		s = "... [Truncated - Unlicensed UniDoc - Get a license on https://unidoc.io]"
+		s = "... [Truncated - Unlicensed UniDoc - Get a license on https://rafaelsanzio.io]"
 		buf.Truncate(buf.Len() - 100)
 	}
 	buf.WriteString(s)

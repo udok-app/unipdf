@@ -11,10 +11,10 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/unidoc/unipdf/v3/common"
+	"github.com/rafaelsanzio/unipdf/common"
 
-	"github.com/unidoc/unipdf/v3/internal/jbig2/bitmap"
-	"github.com/unidoc/unipdf/v3/internal/jbig2/reader"
+	"github.com/rafaelsanzio/unipdf/internal/jbig2/bitmap"
+	"github.com/rafaelsanzio/unipdf/internal/jbig2/reader"
 )
 
 // TestSymbolDictionaryDecode tests the symbol dictionary decode process.

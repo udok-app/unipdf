@@ -9,15 +9,15 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/unidoc/unipdf/v3/common"
+	"github.com/rafaelsanzio/unipdf/common"
 
-	"github.com/unidoc/unipdf/v3/internal/jbig2/bitmap"
-	"github.com/unidoc/unipdf/v3/internal/jbig2/decoder/arithmetic"
-	"github.com/unidoc/unipdf/v3/internal/jbig2/decoder/mmr"
-	enc "github.com/unidoc/unipdf/v3/internal/jbig2/encoder/arithmetic"
-	"github.com/unidoc/unipdf/v3/internal/jbig2/errors"
-	"github.com/unidoc/unipdf/v3/internal/jbig2/reader"
-	"github.com/unidoc/unipdf/v3/internal/jbig2/writer"
+	"github.com/rafaelsanzio/unipdf/internal/jbig2/bitmap"
+	"github.com/rafaelsanzio/unipdf/internal/jbig2/decoder/arithmetic"
+	"github.com/rafaelsanzio/unipdf/internal/jbig2/decoder/mmr"
+	enc "github.com/rafaelsanzio/unipdf/internal/jbig2/encoder/arithmetic"
+	"github.com/rafaelsanzio/unipdf/internal/jbig2/errors"
+	"github.com/rafaelsanzio/unipdf/internal/jbig2/reader"
+	"github.com/rafaelsanzio/unipdf/internal/jbig2/writer"
 )
 
 // GenericRegion represents a generic region segment.

@@ -6,8 +6,8 @@
 package textencoding
 
 import (
-	"github.com/unidoc/unipdf/v3/core"
-	"github.com/unidoc/unipdf/v3/internal/strutils"
+	"github.com/rafaelsanzio/unipdf/core"
+	"github.com/rafaelsanzio/unipdf/internal/strutils"
 )
 
 // UTF16Encoder represents UTF-16 encoding.

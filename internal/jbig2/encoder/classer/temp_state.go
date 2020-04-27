@@ -6,9 +6,9 @@
 package classer
 
 import (
-	"github.com/unidoc/unipdf/v3/common"
+	"github.com/rafaelsanzio/unipdf/common"
 
-	"github.com/unidoc/unipdf/v3/internal/jbig2/bitmap"
+	"github.com/rafaelsanzio/unipdf/internal/jbig2/bitmap"
 )
 
 // similarTemplatesFinder stores the state of a state machine which fetches similar sized templates.

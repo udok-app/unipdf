@@ -6,10 +6,10 @@
 package annotator
 
 import (
-	"github.com/unidoc/unipdf/v3/common"
-	"github.com/unidoc/unipdf/v3/contentstream/draw"
-	pdfcore "github.com/unidoc/unipdf/v3/core"
-	pdf "github.com/unidoc/unipdf/v3/model"
+	"github.com/rafaelsanzio/unipdf/common"
+	"github.com/rafaelsanzio/unipdf/contentstream/draw"
+	pdfcore "github.com/rafaelsanzio/unipdf/core"
+	pdf "github.com/rafaelsanzio/unipdf/model"
 )
 
 // LineAnnotationDef defines a line between point 1 (X1,Y1) and point 2 (X2,Y2).  The line ending styles can be none

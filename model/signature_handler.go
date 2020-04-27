@@ -11,8 +11,8 @@ import (
 	"io"
 	"time"
 
-	"github.com/unidoc/unipdf/v3/common"
-	"github.com/unidoc/unipdf/v3/core"
+	"github.com/rafaelsanzio/unipdf/common"
+	"github.com/rafaelsanzio/unipdf/core"
 )
 
 // Hasher is the interface that wraps the basic Write method.

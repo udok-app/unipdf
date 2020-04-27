@@ -11,7 +11,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/unidoc/unipdf/v3/common"
+	"github.com/rafaelsanzio/unipdf/common"
 )
 
 func init() {

@@ -18,7 +18,7 @@ import (
 	"io"
 	"math"
 
-	"github.com/unidoc/unipdf/v3/common"
+	"github.com/rafaelsanzio/unipdf/common"
 )
 
 var _ StdHandler = stdHandlerR6{}

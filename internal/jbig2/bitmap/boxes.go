@@ -8,8 +8,8 @@ package bitmap
 import (
 	"image"
 
-	"github.com/unidoc/unipdf/v3/internal/jbig2/basic"
-	"github.com/unidoc/unipdf/v3/internal/jbig2/errors"
+	"github.com/rafaelsanzio/unipdf/internal/jbig2/basic"
+	"github.com/rafaelsanzio/unipdf/internal/jbig2/errors"
 )
 
 // Boxes is the wrapper over the slice of image.Rectangles that allows to

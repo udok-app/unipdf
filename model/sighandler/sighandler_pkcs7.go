@@ -12,10 +12,10 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/unidoc/pkcs7"
+	"github.com/rafaelsanzio/pkcs7"
 
-	"github.com/unidoc/unipdf/v3/core"
-	"github.com/unidoc/unipdf/v3/model"
+	"github.com/rafaelsanzio/unipdf/core"
+	"github.com/rafaelsanzio/unipdf/model"
 )
 
 // Adobe PKCS7 detached signature handler.
