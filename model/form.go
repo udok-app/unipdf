@@ -8,6 +8,8 @@ package model
 import (
 	"fmt"
 
+	iconv "github.com/djimenez/iconv-go"
+
 	"github.com/unidoc/unipdf/v3/common"
 	"github.com/unidoc/unipdf/v3/core"
 )
@@ -268,7 +270,10 @@ func (form *PdfAcroForm) fill(provider FieldValueProvider, appGen FieldAppearanc
 			continue
 		}
 
-		if valObj, has := objMap[fname]; has {
+		/* Converting charset to UFT-8 to match fields on form */
+		output, _ := iconv.ConvertingString(fname, "windows-1252", "utf-8")
+
+		if valObj, has := objMap[output]; has {
 			err := fillFieldValue(field, valObj)
 			if err != nil {
 				return err
