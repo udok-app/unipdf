@@ -18,10 +18,10 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/rafaelsanzio/pkcs7"
-	"github.com/rafaelsanzio/timestamp"
 	"github.com/rafaelsanzio/unipdf/core"
 	"github.com/rafaelsanzio/unipdf/model"
+	"github.com/unidoc/pkcs7"
+	"github.com/unidoc/timestamp"
 )
 
 // docTimeStamp DocTimeStamp signature handler.
